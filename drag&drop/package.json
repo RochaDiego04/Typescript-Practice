@@ -5,9 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server",
     "build": "tsc",
-    "dev": "npm-run-all --parallel build start"
+    "start": "lite-server",
+    "watch": "tsc --watch",
+    "dev": "npm-run-all --parallel watch start"
   },
   "keywords": [
     "typescript",
